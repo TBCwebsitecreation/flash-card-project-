@@ -1,0 +1,172 @@
+body {
+  color: black;
+  background: #5A47F0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0px auto 0px auto;
+  position: relative;
+  background-image: url("background image.jpg");
+  background-size: cover;
+  border: 2px solid white;
+  box-shadow: rgb(99, 69, 114);
+}
+
+h1 {
+  color: #E0C87A;
+  margin: 0em 0em .75em 0em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 45px;
+}
+
+header {
+  background-color: #B974E8;
+  height: 11em;
+}
+
+header ul {
+  float: right;
+  padding-right: 30px;
+  padding-bottom: 80px;
+}
+
+.main {
+  padding: 50px;
+}
+
+article h2 {
+  color: #E0C87A;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+
+article p {
+  font-size: 18px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  padding-left: 90px;
+
+}
+
+.cards ul li {
+
+  list-style: none;
+  float: left;
+  width: 440px;
+  height: 300px;
+  background: blueviolet;
+  margin: 40px 30px 0px 40px;
+  border: thin silver solid;
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+  color: #E0C87A;
+  text-indent: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px;
+
+}
+
+#harrypotter {
+  background-image: url("harrypotter.png");
+  background-size: cover;
+}
+
+.footer {
+
+  display: inline-block;
+  margin: 10px 50px 0px 0px;
+  color: #E0C87A;
+  font-size: .85em;
+}
+
+footer {
+  background-color: #B974E8;
+  height: 8em;
+  padding: 20px 0px 10px 10px;
+
+}
+
+
+.box {
+  min-height: 630px;
+  width: 830px;
+  background: white;
+  margin-top: 10%;
+  border-radius: 30px;
+}
+
+.timer,
+.scoreBox {
+  font-size: larger;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 10px 15px;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 35%;
+}
+
+#questions-container {
+  margin: 10% 20% 10% 20%;
+  padding: 80px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 2px;
+  border-radius: 10px;
+
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+  padding-bottom: 30px;
+}
+
+.btn {
+  margin-left: 15%;
+  padding: 10px 30px 10px 30px;
+}
+
+.btn.correct {
+  background: green;
+  /* color: white; */
+}
+
+.btn.wrong {
+  background: red;
+  /* color: white; */
+}
+
+.hidden {
+  display: none;
+}
+
+.control-btn {
+  display: flex;
+  margin-left: 30%;
+  padding-top: 30px;
+}
