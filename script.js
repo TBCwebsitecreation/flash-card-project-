@@ -1,3 +1,9 @@
+//Sources:
+//LinkedIn : https://www.linkedin.com/learning/javascript-events/what-you-should-know?u=2190394
+//https://wwbm.com/history
+//questions from: https://harrypotter.bloomsbury.com/uk/fun-stuff/
+//https://youtu.be/wiozYyXQEVk
+
 //declaring the variables
 
 const startBtn = document.getElementById('start-btn');
@@ -20,12 +26,14 @@ nextBtn.addEventListener('click', () => {
 });
 
 //code help taken from youtube[https://youtu.be/f4fB9Xg2JEY]
+//hiding the start button after it is clicked.
+
 function startGame() {
 	startBtn.classList.add('hidden');
 	shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 	currentQuestions = 0;
 	questionBox.classList.remove('hidden');
-	setNextQuestion();
+	setNextQuestion(); //setting new questions and randomizing. Calling out to another function
 }
 
 function setNextQuestion() {
@@ -70,6 +78,7 @@ function selectAnswer(e) {
 		jsScore.innerText = score;
 	}
 
+	//coverting the next button to restart
 	if (shuffledQuestions.length > currentQuestions + 1) {
 		nextBtn.classList.remove('hidden');
 	} else {
