@@ -1,3 +1,5 @@
+//declaring the variables
+
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
 const questionBox = document.getElementById('questions-container');
@@ -8,6 +10,7 @@ const jsScore = document.querySelector('.scoreBox');
 const answer = document.querySelector('#answer');
 console.log(answer);
 
+//initializing score to 0
 let score = 0;
 
 startBtn.addEventListener('click', startGame);
@@ -16,6 +19,7 @@ nextBtn.addEventListener('click', () => {
 	setNextQuestion();
 });
 
+//code help taken from youtube[https://youtu.be/f4fB9Xg2JEY]
 function startGame() {
 	startBtn.classList.add('hidden');
 	shuffledQuestions = questions.sort(() => Math.random() - 0.5);
@@ -52,6 +56,7 @@ function resetGame() {
 	}
 }
 
+//code help taken from https://youtu.be/Z-HLdIYHjRM
 function selectAnswer(e) {
 	const selectedButton = e.target;
 	const correct = selectedButton.dataset.correct;
@@ -127,3 +132,4 @@ const questions = [
 		],
 	},
 ];
+//going to add more
